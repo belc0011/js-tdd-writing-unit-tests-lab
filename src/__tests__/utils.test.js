@@ -15,4 +15,11 @@ describe("isPalindrome", () => {
 
         expect(isPalindromeTestEmptyString).toBe(false);
     })
+    it("should return 'true' if palindrome has both upper and lowercase letters", () => {
+        const mixedCasePalindrome = "BabAb";
+
+        const isPalindromeTestMixedCase = isPalindrome(mixedCasePalindrome);
+
+        expect(isPalindromeTestMixedCase).toBe(true)
+    })
 })
